@@ -3,21 +3,32 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Montserrat', sans-serif;
 }
 
+p{
+    color:white;
+}
+h1{
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+}
 .rounded-corner {
   border-radius: 20px;
 }
 .switch-container {
   background-color: #323232;
+display: flex;
   margin: 15px 0px 0px 15px;
+
 }
 .generator-container {
   background: #353941;
-  width: 80%;
+  width: 40%;
   display: flex;
   justify-content: center;
   padding: 30px;
+
 }
 
 .form {
@@ -25,18 +36,40 @@ body {
   flex-direction: column;
 }
 
+
+.label{
+    color:white;
+    align-self: center;
+}
+
+#length {
+    width: 100% !important;
+    height:30px;
+    border-radius: 8px;
+}
+
+#length:focus{
+    outline:solid 2px lime;
+    border-radius: 8px;
+}
 .form input {
   width: fit-content;
 }
 
 .form button {
-  width: fit-content;
+  width: 54%;
+  color:white;
+  background: linear-gradient(-225deg, #FF3CAC 0%, #562B7C 52%, #2B86C5 100%);
   align-self: center;
-  padding:8px;
+  padding:20px;
   border: none;
   border-radius: 8px;
 margin-top: 10px;}
 
+
+.form label {
+color:white;
+}
 .switch {
   position: relative;
   display: inline-block;

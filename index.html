@@ -5,40 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./index.css" />
-
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <title>Password Generator</title>
   </head>
 
   <body>
     <div class="generator-container rounded-corner">
       <form class="form" id="form">
-        <input type="number" id="length" />
+        <h1>Password Generator</h1>
+        <label for="length">
+          Password Length
+          <br />
+          <br />
+          <input type="number" id="length" />
+        </label>
+        <div class="switch-container rounded-corner">
+          <label class="switch">
+            <input type="checkbox" id="uppercase" />
+            <span class="slider round"></span> 
+          
+          </label>
+          <span class="label">Upercase</span>
+        </div>
+        <div class="switch-container rounded-corner">
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+          <span class="label">Special Characters</span>
+        </div>
 
         <div class="switch-container rounded-corner">
           <label class="switch">
             <input type="checkbox" />
             <span class="slider round"></span>
           </label>
+          <span class="label">Lower Case</span>
         </div>
+
         <div class="switch-container rounded-corner">
           <label class="switch">
             <input type="checkbox" />
             <span class="slider round"></span>
           </label>
-        </div>
-
-        <div class="switch-container rounded-corner">
-        <label class="switch">
-          <input type="checkbox" />
-          <span class="slider round"></span>
-        </label>
-        </div>
-
- <div class="switch-container rounded-corner">
-        <label class="switch">
-          <input type="checkbox" />
-          <span class="slider round"></span>
-        </label>
+          <span class="label">Special Characters</span>
         </div>
 
         <button>Genetare Password</button>
