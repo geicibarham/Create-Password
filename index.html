@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,33 +10,40 @@
   </head>
 
   <body>
-    <div class="input-container">
-      <form
-        id="form"
-       
-      >
+    <div class="generator-container rounded-corner">
+      <form class="form" id="form">
         <input type="number" id="length" />
-        <output min="4" max="32" id="output"></output>
-        <input type="checkbox"/>
 
+        <div class="switch-container rounded-corner">
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="switch-container rounded-corner">
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+
+        <div class="switch-container rounded-corner">
         <label class="switch">
-          <input type="checkbox">
+          <input type="checkbox" />
           <span class="slider round"></span>
         </label>
-        <button>test</button>
-      </form>
-    </div>
+        </div>
 
-    <div class="setting">
-      <input type="checkbox" id="uppercase" checked />
-      <label for="uppercase">Include Uppercase</label>
+ <div class="switch-container rounded-corner">
+        <label class="switch">
+          <input type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+        </div>
+
+        <button>Genetare Password</button>
+      </form>
     </div>
   </body>
   <script src="./assets/index.js"></script>
 </html>
-
-
-
-
-
-
