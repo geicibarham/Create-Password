@@ -11,21 +11,20 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <title>Password Generator</title>
   </head>
 
   <body>
+
     <div class="generator-container rounded-corner">
       <div>
-
         <h1>Password Generator</h1>
       <div id="password-container">
         <p id="p"></p>
       </div>
       <br>
       <form class="form" id="form">
-     
-        
         <label for="length">
           Password Length
           <br />
@@ -57,7 +56,7 @@
 
         <div class="switch-container rounded-corner">
           <label class="switch">
-            <input type="checkbox" id="numbers" />
+            <input type="checkbox" id="numbers"/>
             <span class="slider round"></span>
           </label>
           <span class="label">Numbers</span>
@@ -66,7 +65,8 @@
         <button>Genetare Password</button>
       </form>
     </div>
-  </div>
   </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="./index.js"></script>
 </html>

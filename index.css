@@ -2,9 +2,11 @@ body {
   background-color: #0a0e30;
   display: flex;
   justify-content: center;
-  align-items: center;
+ 
   font-family: "Montserrat", sans-serif;
 }
+
+
 
 .passwordContainer {
  background-color: #885df1;
@@ -147,4 +149,20 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+
+/* style of modal */
+body > div.swal-overlay.swal-overlay--show-modal > div > div.swal-footer > div > button {
+  background-color: hotpink !important;
+}
+
+.swal-overlay--show-modal .swal-modal {
+  background-color: white !important;
+
+}
+
+body > div.swal-overlay.swal-overlay--show-modal > div > div.swal-text {
+  color:#0a0e30 !important;
+  font-weight: bold !important;
 }

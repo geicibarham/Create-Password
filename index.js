@@ -22,7 +22,20 @@ const handleSubmit = (e) => {
 };
 
 const generatePassword = () => {
-  if (len > 4 || len > 32) {
+  if (len < 4 || len > 32) {
+    swal("The password needs to have between 4 and 32 characters 🙁");
+  }
+  if (
+   !document.getElementById("uppercase").checked &&
+    !document.getElementById("special").checked && 
+    !document.getElementById("lowercase").checked && 
+    !document.getElementById("numbers").checked
+
+  ) {
+    swal("You need to choose at least one criteria for a secure password 🙁");
+    return;
+  }
+  if (len >= 4 || len > 32) {
     if (document.getElementById("uppercase").checked) {
       password = password += alphabetupper;
     }
@@ -59,7 +72,7 @@ const copyContent = async () => {
   console.log(p.innerHTML);
   try {
     await navigator.clipboard.writeText(p.innerHTML);
-    console.log("Content copied to clipboard");
+    swal("Copyed!📋 😊");
   } catch (err) {
     console.error("Failed to copy: ", err);
   }
