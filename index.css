@@ -3,32 +3,49 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
-p{
-    color:white;
+.passwordContainer {
+ background-color: #885df1;
+  border-radius: 14px;
+  padding:8px;
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
 }
-h1{
-    color:white;
-    font-family: 'Montserrat', sans-serif;
+
+.passwordContainer button {
+  border:none;
+  border-radius: 8px;
+  padding:8px;
+  background: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);
+  color:white;
+  width: 40%;
+}
+p {
+  color: white;
+}
+h1 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+
 }
 .rounded-corner {
   border-radius: 20px;
 }
 .switch-container {
   background-color: #323232;
-display: flex;
+  display: flex;
   margin: 15px 0px 0px 15px;
-
+ 
 }
 .generator-container {
   background: #353941;
   width: 40%;
   display: flex;
   justify-content: center;
-  padding: 30px;
-
+  padding: 20px;
 }
 
 .form {
@@ -36,21 +53,20 @@ display: flex;
   flex-direction: column;
 }
 
-
-.label{
-    color:white;
-    align-self: center;
+.label {
+  color: white;
+  align-self: center;
 }
 
 #length {
-    width: 100% !important;
-    height:30px;
-    border-radius: 8px;
+  width: 100% !important;
+  height: 30px;
+  border-radius: 8px;
 }
 
-#length:focus{
-    outline:solid 2px lime;
-    border-radius: 8px;
+#length:focus {
+  outline: solid 2px lime;
+  border-radius: 8px;
 }
 .form input {
   width: fit-content;
@@ -58,17 +74,17 @@ display: flex;
 
 .form button {
   width: 54%;
-  color:white;
-  background: linear-gradient(-225deg, #FF3CAC 0%, #562B7C 52%, #2B86C5 100%);
+  color: white;
+  background: linear-gradient(-225deg, #ff3cac 0%, #562b7c 52%, #2b86c5 100%);
   align-self: center;
-  padding:20px;
+  padding: 20px;
   border: none;
   border-radius: 8px;
-margin-top: 10px;}
-
+  margin-top: 10px;
+}
 
 .form label {
-color:white;
+  color: white;
 }
 .switch {
   position: relative;
