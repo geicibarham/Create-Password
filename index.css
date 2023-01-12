@@ -5,9 +5,6 @@ body {
  
   font-family: "Montserrat", sans-serif;
 }
-
-
-
 .passwordContainer {
  background-color: #885df1;
   border-radius: 14px;
@@ -166,3 +163,24 @@ body > div.swal-overlay.swal-overlay--show-modal > div > div.swal-text {
   color:#0a0e30 !important;
   font-weight: bold !important;
 }
+
+@media screen and (max-width:768px) {
+  
+  .generator-container {
+    width: fit-content;
+
+  }
+
+  .form button {
+    width: 50%;
+    
+  }
+}
+
+/* @media screen and (max-width: 1000px) {
+  
+  .generator-container {
+    width: 70%;
+    margin-top: 140px;
+  }
+} */
